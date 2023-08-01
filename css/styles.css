@@ -141,8 +141,9 @@ body {
   }
 } 
 
-@media screen and (min-width: 800px) {
-  .container {
+@media screen and (min-width: 100px) {
+  .todolist {
     margin: 1em 2em;
+    width: 80%;
   }
 }
