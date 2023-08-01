@@ -78,6 +78,18 @@ const Main = {
 
 }
 
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  const data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+}
+
+
 Main.init()
 
  
