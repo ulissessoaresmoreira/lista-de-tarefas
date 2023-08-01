@@ -11,8 +11,9 @@
   <div class="todolist">
     <header>Lista de Tarefas</header>
 
-    <section class="wrapper-list">
-      <ul id="list" class="list">                
+
+    <section class="wrapper-list droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <ul id="listDragtarget" class="list" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true">                
       </ul>
     </section>
 
